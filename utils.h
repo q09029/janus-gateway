@@ -60,11 +60,6 @@ gboolean janus_is_true(const char *value);
  * @returns true if the strings are the same, false otherwise */
 gboolean janus_strcmp_const_time(const void *str1, const void *str2);
 
-/*! \brief Helper to generate random 8-bit unsigned integers (useful for SSRCs, etc.)
- * @note Currently just wraps g_random_int()
- * @returns A random 8-bit unsigned integer */
-guint8 janus_random_uint8(void);
-
 /*! \brief Helper to generate random 32-bit unsigned integers (useful for SSRCs, etc.)
  * @note Currently just wraps g_random_int()
  * @returns A random 32-bit unsigned integer */

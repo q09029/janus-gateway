@@ -2143,7 +2143,7 @@ janus_plugin_result *janus_textroom_handle_incoming_request(janus_plugin_session
 		/* Generate a random ID */
 		if(room_id == 0) {
 			while(room_id == 0) {
-				room_id = janus_random_uint64() &0xFF;
+				room_id = janus_random_uint64();
 				if(g_hash_table_lookup(rooms, &room_id) != NULL) {
 					/* Room ID already taken, try another one */
 					room_id = 0;
